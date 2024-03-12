@@ -37,7 +37,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: json-artifact
-        path: ${{ github.workspace }}/TB.json
+        path: ${{ github.workspace }}/TB.icons.json
 
     - name: Push to TB Repository
       run: |
