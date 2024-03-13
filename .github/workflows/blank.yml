@@ -3,10 +3,10 @@ name: Image Workflow
 on:
   push:
     paths:
-      - 'icon/**' # 监视 icons 文件夹及其子文件夹下的内容
+      - 'TB/**' # 监视 icons 文件夹及其子文件夹下的内容
   pull_request:
     paths:
-      - 'icon/**' # 监视 icons 文件夹及其子文件夹下的内容
+      - 'TB/**' # 监视 icons 文件夹及其子文件夹下的内容
   workflow_dispatch:
 
 jobs:
@@ -37,7 +37,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: json-artifact
-        path: ${{ github.workspace }}/icon.icons.json
+        path: ${{ github.workspace }}/TB.icons.json
 
     - name: Push to TB Repository
       run: |
