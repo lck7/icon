@@ -2,9 +2,9 @@ import os
 import json
 
 def generate_json():
-    image_folder = 'icon'
+    image_folder = 'TB'
     json_data = {
-        "name": "icon图标",
+        "name": "TB图标",
         "description": "脚本任务图标",
         "icons": []
     }
@@ -17,7 +17,7 @@ def generate_json():
             json_data["icons"].append(icon_data)
 
     # Set the output path relative to the repository root
-    output_path = os.path.join(os.getcwd(), 'icon.icons.json')
+    output_path = os.path.join(os.getcwd(), 'TB.icons.json')
 
     with open(output_path, 'w', encoding='utf-8') as json_file:
         json.dump(json_data, json_file, ensure_ascii=False, indent=2)
