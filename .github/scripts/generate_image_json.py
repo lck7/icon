@@ -4,8 +4,8 @@ import json
 def generate_json():
     image_folder = 'TB'
     json_data = {
-        "name": "TB图标",
-        "description": "脚本任务图标",
+        "name": "icon图标",
+        "description": "自收集的一些图标",
         "icons": []
     }
 
